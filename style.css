@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Armata&family=Michroma&family=Titillium+Web:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
-@import "compass/css3";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu+Mono&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -76,8 +76,9 @@ a{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 35%;
   height:70%;
+  /* border-radius: 50%; */
  
 }
 .social li{
@@ -86,6 +87,17 @@ a{
 }
 .projects{
   height: 100%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+}
+.hello{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+}
+.aboutme{
+  font-family: 'Bebas Neue', cursive;
+font-size: 40px;
+text-decoration: underline;
 }
 .fa-envelope{
   color: red;
@@ -144,27 +156,45 @@ a{
   font-size: 90px;
 }
 
-
-@media screen and (max-width:992px) {
+@media screen and (min-width :676px) and (max-width:992px) {
   .main-social li{
     display:inline;
     float: left;
     margin-left: 40px;
     }
     .main-social{
-      padding-left: 70%;
+      padding-left: 50%;
     }
 
 }
 
 
-@media screen and (max-width:576px) {
+@media screen and (min-width:576px) and (max-width :676px){
+  .main-social li{
+    display:inline;
+    float: left;
+    margin-left: 40px;
+    }
   .main-social{
-    padding-left: 30%;
+    padding-left: 40%;
   }
 }
-
+@media screen and (min-width:368px) and (max-width:576px) {
+  .main-social li{
+    display:inline;
+    float: left;
+    margin-left: 40px;
+    }
+  .main-social{
+    padding-left: 20%;
+  }
+}
 @media screen and (max-width:368px) {
+  .main-social li{
+    display:inline;
+    float: left;
+    margin-left: 40px;
+    }
   .main-social{
     padding-left: 6%;
   }
